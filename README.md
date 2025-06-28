@@ -7,6 +7,10 @@
 
 :bookmark: Documentation : [https://orange-cyberdefense.github.io/GOAD/](https://orange-cyberdefense.github.io/GOAD/)
 
+# WSL issues I faced
+- VMs in VirtualBox are slow and stutter, which possibly causes the playbook to timeout when using winrm.
+- Some solutions here: https://github.com/Orange-Cyberdefense/GOAD/issues/72. I applied the changes to globalsettings.ini and workspace/your-instance/inventory_disable_vagrant
+
 ## Description
 GOAD is a pentest active directory LAB project.
 The purpose of this lab is to give pentesters a vulnerable Active directory environment ready to use to practice usual attack techniques.
