@@ -7,12 +7,12 @@
 
 :bookmark: Documentation : [https://orange-cyberdefense.github.io/GOAD/](https://orange-cyberdefense.github.io/GOAD/)
 
-# WSL issues I faced
+# WSL and VirtualBox issues I faced 
 - VMs in VirtualBox are slow and stutter, which possibly causes the playbook to timeout when using winrm when connecting to some VMs (dc03 and srv03 in GOAD never timeout)
 - Some solutions here: https://github.com/Orange-Cyberdefense/GOAD/issues/72. I applied the changes to globalsettings.ini and workspace/your-instance/inventory_disable_vagrant.
 - Sometimes the wrong IP will be assigned to the VM, so delete all files of that VM from VirtualBox and install via goad.sh again.
 
-## Solution
+## **Solution - WSL and VMware**
 - Use VMware, set the network adapters manually. Works like a charm.
 - Make sure you DON'T clone the repo on the UNIX filesystem. Clone it on your Windows NTFS drive, otherwise the VMX files of your VMs won't open in VMware.
 
