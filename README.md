@@ -12,7 +12,7 @@
 - Some solutions here: https://github.com/Orange-Cyberdefense/GOAD/issues/72. I applied the changes to globalsettings.ini and workspace/your-instance/inventory_disable_vagrant.
 - Sometimes the wrong IP will be assigned to the VM, so delete all files of that VM from VirtualBox and install via goad.sh again.
 
-## **Solution - WSL and VMware**
+## *Solution - WSL and VMware*
 - Use VMware, set the network adapters manually. Works like a charm.
 - Make sure you DON'T clone the repo on the UNIX filesystem. Clone it on your Windows NTFS drive, otherwise the VMX files of your VMs won't open in VMware.
 
