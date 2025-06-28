@@ -14,7 +14,7 @@
 
 ## Solution
 - Use VMware, set the network adapters manually. Works like a charm.
-- Make sure you DON'T clone the repo on the UNIX filesystem. Clone it on your Windows NTFS drive, otherwise the VMX files of your VM won't open in VMware.
+- Make sure you DON'T clone the repo on the UNIX filesystem. Clone it on your Windows NTFS drive, otherwise the VMX files of your VMs won't open in VMware.
 
 ## Description
 GOAD is a pentest active directory LAB project.
